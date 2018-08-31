@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>At the crossroads of data</h2>
+					Presenting the CAMOTECCER relational database of archaeological ceramics from Central Asia
+					<p>
+						<small style="color:DodgerBlue;">Andreas <b>Angourakis</b>, Verónica <b>Martínez Ferreras</b>, Josep M. <b>Gurt</b>,</small>
+						<small style="color:DodgerBlue;">Enrique <b>Ariño Gil</b>, Shakir R. <b>Pidaev</b></small>
+					</p>
+					
+					<img src="_figures/ERAAUB.jpg" alt="ERAAUB logo" 
+					style="width: 300px; border: none; box-shadow: none; position: absolute; top: 90%;right: 26%"/>
+					<img src="_figures/MinisterioLogo.png" alt="Ministerio logo" 
+					style="width: 300px; border: none; box-shadow: none; position: absolute; top: 100%;right: 70%"/>
+					<img src="_figures/fac-historia.png" alt="Facultat logo" 
+					style="width: 150px; border: none; box-shadow: none; position: absolute; top: 100%;right: 53%"/>
+					<img src="_figures/EAA2018_LOGO01_color.jpg" alt="EAA2018 logo" 
+					style="width: 200px; border: none; box-shadow: none; position: absolute; top: 93%;right: 0%"/>
+				</section>
+				<section>
+					<section>
+						<h2>Context</h2>
+						<i style="color:DodgerBlue">CAMOTECCER</i> project (2013-17),
+						<br>
+						<i style="color:DodgerBlue">CERAC</i> project (2017-20)
+						<br><br>
+						Archaeological and archaeometric study on ceramic production in Surkhan Darya region, Uzbekistan.
+					</section>
+					<section>
+						<h2>Areas of development:</h2>
+						<ul>
+							<li>Historical and ethnographic research</li>
+							<li><b>Definition of a theoretical model for (non-industrial) pottery production <i class="fragment">(&#8594; data base design)</i></b></li>
+							<li>Archaeometric characterisation of archaeological pottery</li>
+							<li>Geological characterisation of the region (raw materials)</li>
+							<li>Experimentation regarding the properties and the functional capabilities of ceramic containers</li>
+							<li>Formalisation of the theoretical model</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<h2 style="text-align: left">Goals</h2><br><br><br><br><br><br><br><br>
+					<img class="fragment" src="_figures/projects_1.png" alt="projects concept 1" 
+					style="width: 100%; height: 100%; border: none; box-shadow: none; position: fixed; top: 0%; right:0%"/>
+					<img class="fragment" src="_figures/projects_2.png" alt="projects concept 1" 
+					style="width: 100%; height: 100%; border: none; box-shadow: none; position: fixed; top: 0%;right: 0%"/>
+					<img class="fragment" src="_figures/projects_3.png" alt="projects concept 1" 
+					style="width: 100%; height: 100%; border: none; box-shadow: none; position: fixed; top: 0%;right: 0%"/>
+				</section>
+				<section>
+					<h2>Why</h2>
+					<p><i style="color:DodgerBlue">Integrate</i> results of many different archaeometric techniques on ceramics</p>
+					<p>
+						<i class="fragment">Concerns</i>
+						<ul>
+							<li class="fragment">centralize data management</li>
+							<li class="fragment">standardize qualitative data</li>
+							<li class="fragment">facilitate new entries</li>
+							<li class="fragment">export data sets (.csv) for statistical analysis</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>What</h2>
+					<ul>
+							<li class="fragment"><i style="color:DodgerBlue">relational</i> database</li>
+							<li class="fragment">combines <i>archaeological</i> and <i>archaeometric</i> data</li>
+							<li class="fragment">more than 700 ceramic individuals</li>
+							<li class="fragment">sites in the <i>Surkhan Darya</i> region, Uzbekistan</li>
+							<li class="fragment">Hellenistic to Islamic period</li>
+							<li class="fragment">	+ over 200 wine Roman amphorae from Catalonia (generality test)</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Tables and relationships</h3>
+					<img src="_figures/TableRelations_2018_ago.png" alt="table relationships" 
+					style="width: 750px; border: none; box-shadow: none"/>
+				</section>
+				<section>
+					<h3>Tables > Individuals</h3>
+					<img src="_figures/IndividualsT.png" alt="table relationships" 
+					style="width: 750px; border: none; box-shadow: none"/>
+					<p>Gathers the basic information on ceramic individuals</p>
+					<p>Links them to the archaeological and archaeometric data</p>
+				</section>
+				<section>
+						<h3>Tables > Context</h3>
+						<img src="_figures/ContextT.png" alt="table relationships" 
+						style="width: 750px; border: none; box-shadow: none"/>
+						<small>
+						<p><<i>stratigraphic</i> unit related to individuals</p>
+						<p>relates to a site and (optionally) to a site sector</p>
+						<p>dated numerically and/or linked to a period</p>
+						<p>register other variables regarding inferred function</p>
+						</small>
+					</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
