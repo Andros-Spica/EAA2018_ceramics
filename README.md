@@ -2,6 +2,8 @@
 
 A presentation for European Archaeological Association meeting - **EAA 2018** (6-8/09/2018), Session #312 - *Ancient pottery in Central Asia: large scale perspective on the production systems and the cultural interactions*
 
+https://www.e-a-a.org/EAA2018
+
 Prepared with *reveal.js* (see https://revealjs.com/)
 
 
