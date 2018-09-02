@@ -43,7 +43,7 @@
 						<small style="color:DodgerBlue;">Enrique <b>Ariño Gil</b>, Shakir R. <b>Pidaev</b></small>
 						<small>Session #312 - <i>Ancient pottery in Central Asia: large scale perspective on the production systems and the cultural interactions</i></small>
 					</p>
-					<small>available at <b style="color:purple">https://andros-spica.github.io/EAA2018_ceramics/</b></small>
+					<small>available at <b style="color:blue">https://andros-spica.github.io/EAA2018_ceramics/</b></small>
 					<img src="figures/ERAAUB.jpg" alt="ERAAUB logo" 
 					style="width: 200px; border: none; box-shadow: none; position: absolute; top: 99%;right: 31%"/>
 					<img src="figures/MinisterioLogo.png" alt="Ministerio logo" 
@@ -56,11 +56,17 @@
 				<section>
 					<section>
 						<h2>Context</h2>
-						<i style="color:DodgerBlue">CAMOTECCER</i> project (2013-17),
-						<br>
-						<i style="color:DodgerBlue">CERAC</i> project (2017-20)
-						<br><br>
-						Archaeological and archaeometric study on ceramic production in Surkhan Darya region, Uzbekistan.
+						<div id="right">
+							<img src="figures/tres_mapas.jpg" alt="shape class table" 
+							style="width: 100%; border: none; box-shadow: none"/>
+						</div>
+						<div id="left">
+							<i style="color:DodgerBlue">CAMOTECCER</i> project<br>(2013-17),
+							<br>
+							<i style="color:DodgerBlue">CERAC</i> project<br>(2017-20)
+							<br><br>
+							Archaeological and archaeometric study on ceramic production in Surkhan Darya region, southern Uzbekistan.
+						</div>
 					</section>
 					<section>
 						<h2 style="text-align: left">Goals</h2><br><br><br><br><br><br><br><br>
@@ -73,14 +79,14 @@
 					</section>
 					<section>
 						<h2>Areas of development:</h2>
-						<small><ul>
+						<ul>
 							<li>Historical and ethnographic research</li>
-							<li><b>Definition of a theoretical model for (non-industrial) pottery production <br/><i class="fragment">(&#8594; data base design)</i></b></li>
+							<li><b>Definition of a theoretical model for (non-industrial) pottery production<i class="fragment">(&#8594; data base design)</i></b></li>
 							<li>Archaeometric characterisation of archaeological pottery</li>
 							<li>Geological characterisation of the region (raw materials)</li>
 							<li>Experimentation regarding the properties and the functional capabilities of ceramic containers</li>
 							<li>Formalisation of the theoretical model</li>
-						</ul></small>
+						</ul>
 					</section>
 				</section>
 				<section>
@@ -173,6 +179,7 @@
 						style="width: 600px; border: none; box-shadow: none"/>
 						<small>
 							<p>Petrographic <i>qualitative</i> data (thin section optical microscopy)
+								+ firing temperature (inferred from X-ray diffraction)
 							<br>+ fabric group (if determined)
 							<br><br><i style="font-size:60%">Whitbread, I.K. (1995). Greek transport amphorae: a petrological and archaeological study, British School at Athens, Fitch Laboratory Occasional Paper 4, Athens.</i></p>
 						</small>
@@ -221,15 +228,56 @@
 				<section>
 					<section>
 						<h3>Tables > Shape</h3>
-						<img src="figures/ShapeT.PNG" alt="surface table" 
+						<img src="figures/ShapeT.PNG" alt="shape table" 
 						style="width: 750px; border: none; box-shadow: none"/>
 						<p>Typology and measurements</p>
 					</section>
 					<section>
 						<h3>Tables > Shape class</h3>
-						<img src="figures/ShapeClassT.PNG" alt="surface table" 
+						<img src="figures/ShapeClassT.PNG" alt="shape class table" 
 						style="width: 750px; border: none; box-shadow: none"/>
 						<p>Name, functional category and description</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Application</h3>
+						<p>
+							Integrative multivariate statistical analysis<br><br>
+							We defined four protocols for analysing geochemical and petrographic data:
+							<br><br><i style="font-size:60%">Angourakis, A., Martínez Ferreras, V., Torrano, A. and Gurt Esparraguera, J.M. (2018). Presenting multivariate statistical protocols in R using Romanwine amphorae productions in Catalonia, Spain. Journal of Archaeological Science, 93: 150-165. https://doi.org/10.1016/j.jas.2018.03.007</i>
+							<br><br>Data in Surface and Shape tables still need to be addressed.
+						</p>
+					</section>
+					<section>
+						<h3>Example</h3>
+						45 tableware individuals from 4 sites:
+						<ul>
+							<li><i>Kampyr Tepe</i>, Hellenistic period (<b>KPT</b>)</li>
+							<li><i>Termez - Tchingiz Tepe</i>, Yuezhi to Kushan-Sassanid period (<b>TT</b>)</li>
+							<li><i>Termez - Kara Tepe</i>, Kushan-Sassanid period (<b>KT</b>)</li>
+							<li><i>Termez - Ancient Quarters</i>, Islamic period (<b>ISL</b>)</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Protocol 1: CHEM table</h3>
+						<img src="figures/uzb_Prot1.png" alt="prot1 plot" 
+						style="float: center; width: 500px; border: none; box-shadow: none"/>
+					</section>
+					<section>
+						<h3>Protocol 2: PETRO table</h3>
+						<img src="figures/uzb_Prot2.png" alt="prot1 plot" 
+						style="float: center; width: 500px; border: none; box-shadow: none"/>
+					</section>
+					<section>
+						<h3>Protocol 3: CHEM and PETRO tables</h3>
+						<img src="figures/uzb_Prot3.png" alt="prot1 plot" 
+						style="float: center; width: 500px; border: none; box-shadow: none"/>
+					</section>
+					<section>
+						<h3>Protocol 4: CHEM and selection of PETRO variables</h3>
+						<img src="figures/uzb_Prot4.png" alt="prot1 plot" 
+						style="float: center; width: 500px; border: none; box-shadow: none"/>
 					</section>
 				</section>
 				<section>
@@ -243,7 +291,7 @@
 							THANK YOU!
 						</p>
 						<p>
-							address any questions to A. Angourakis: <i style="color:blue">andros.spica@gmail.com</i>
+							<small>address any questions to A. Angourakis: <i style="color:blue">andros.spica@gmail.com</i></small>
 						</p>
 						<img src="figures/ERAAUB.jpg" alt="ERAAUB logo" 
 						style="width: 200px; border: none; box-shadow: none; position: absolute; top: 99%;right: 31%"/>
