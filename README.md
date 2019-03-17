@@ -14,7 +14,7 @@ Angourakis, Andreas
 Martínez Ferreras, Verónica  
 Gurt, Josep M.  
 Ariño Gil, Enrique  
-Pidaev, Shakir, R.  
+Pidaev, Shakir R.  
 
 **Abstract**  
 We present the structure and current state of the relational database developed during the CAMOTECCER project (HAR2012-32653, 2013-17). This database integrates archaeological and archaeometric data of more than 700 ceramic individuals from several sites in the Surkhan Darya region (ancient northern Bactria), Uzbekistan dated from the Hellenistic to the Islamic period. It documents an individual sample in space (site, sector, and context or stratigraphic unit) and time (through the context dating), being flexible enough to accept different levels of certainty and precision of the archaeological information available. For instance, sites can be located by both geographical coordinates and regional-to-local recursive subdivisions (i.e., Uzbekistan, Surkhan Darya region, South Surkhan Darya region, Bas Surkhan, Termez). To the date, we considered three types of archaeometric data: (a) geochemical composition given by X-ray fluorescence (XRF); (b) petrographic (thin-section microscopy) and mineralogical (X-ray diffraction or XRD) composition and structure; and (d) measurements and classification regarding the shape of ceramic individuals. The four types of archaeometric data can be registered independently but remain connected, to each other and archaeological data, through the unique reference of ceramic individuals.
