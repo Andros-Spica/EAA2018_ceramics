@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/146898723.svg)](https://zenodo.org/badge/latestdoi/146898723)
+
 # At the crossroads of data. Presenting the CAMOTECCER relational database of archaeological ceramics from Central Asia
 
 A presentation for European Archaeological Association meeting - **EAA 2018** (6-8/09/2018), Session #312 - *Ancient pottery in Central Asia: large scale perspective on the production systems and the cultural interactions*
